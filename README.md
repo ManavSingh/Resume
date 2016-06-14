@@ -1,3 +1,4 @@
 # Resume
-This is my Resume.
-It is a description of my qualifications and experiences.
+This is a .tex file of my Resume.
+It can be opened and compiled using any LaTeX distribution. 
+You will need to compile it using XeLaTeX.
