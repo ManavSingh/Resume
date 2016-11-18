@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage[top=1in, bottom=1in, left=.75in, right=.75in]{geometry} %Allows manipulation of margins
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+\titleformat{\subsection}{\scshape\raggedright}{}{0em}{}[\titlerule] % Subsection formatting (M.S.)
+%% See http://www.ctex.org/documents/packages/layout/titlesec.pdf to view options and arguments of \titleformat (M.S.)
+
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{0in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{0in} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.9}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+%Ideas
+%Awards
+%Programming Languages
+%Equipment Skills
+%Writing Skills
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+%\cofoot{
+%\addfontfeature{LetterSpace=20}\fontsize{12}{12}\selectfont % Letter spacing and font size
+
+%1786 Isabel Virginia Drive {\large\textperiodcentered} Tracy {\large\textperiodcentered} Ca 95377\\ % Your mailing address
+%{\Large\Letter} msingh91@gmail.com \ {\Large\Telefon} (209) 627-5358 % Your email address and phone number
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{30}{30}\selectfont\scshape Manav Singh} % Your name at the top
+
+\vspace{.25 cm} %Space between information and title
+
+%Information below title
+
+1786 Isabel Virginia Drive {\large\textperiodcentered} Tracy {\large\textperiodcentered} Ca 95377 \\  % Your mailing address
+{\Large\Letter} msingh91@gmail.com \ {\Large\Telefon} (209) 627-5358 % Your email address and phone number
+
+
+\vspace{-.25 cm} % Extra whitespace after title information
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%Insert cool job here
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Education}}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedright\scshape}p{2cm}X}
+%\gray Period & \textbf{August 2013 --- May 2015}\\
+\gray Degree & \textbf{M.S. Physics} \hfill San Francisco State University, May 2015\\
+%\gray University & \textbf{San Francisco State University} \hfill San Francisco, California\\
+\gray Research & \textbf{Plasma Atmosphere Around a Neutron Star} \\ 
+& Wrote and optimized Python code to simulate the magneto-hydrodynamic interaction of plasma accreting onto a magnetized neutron star. Used finite difference methods to computationally solve system of coupled differential equations. Analyzed properties and behavior of shock waves generated in the system. (Pending Thesis Defense August 2015) \\ \hline
+%& Extra information about degree
+\end{tabularx}
+
+\vspace{12pt} %Space between Education entries
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedright\scshape}p{2cm}X}
+%\gray Period & \textbf{September 2009 --- March 2013}\\
+\gray Degree & \textbf{B. S. Physics}\hfill  University of California San Diego, March 2013 \\
+%\gray University & \textbf{University of California San Diego} \hfill La Jolla, California\\
+\gray Research & \textbf{Nanoparticles in Electromagnetic Waves} \\
+& Learned basic use of COMSOL software, simulated effects of electromagnetic waves on nanoparticles of various materials. Analyzed field enhancement near nanoparticle surface. Presented findings to research advisor and collaborating postdoctoral advisors.  \\
+\gray Senior Project & \textbf{Maglev Train} \\
+& Worked with partner to design and build magnetically levitating train and 1-meter track. Computationally modeled custom electromagnet design, devised efficient electromagnet build process, built 20 hand-wound electromagnets to within 5\% error. Coded dynamic algorithm for Arduino Nano to move train along track using data from ultrasonic distance sensors. \\ 
+%& Extra information about degree
+\end{tabularx}
+
+%Tabular styling edited by M.S.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Work Experience}}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedright\scshape}p{2cm}X}
+\gray Period & \textbf{August 2014 --- May 2015}\\
+\gray Employer & \textbf{SFSU Physics Department} \hfill San Francisco, California\\
+\gray Job Title & \textbf{Graduate Teaching Assistant}\\
+& Taught weekly laboratory courses. Guided students through practical experiments to help with conceptual understanding of mechanics, electricity, and magnetism. Graded lab reports and managed detailed grade sheets. Held extensive office hours sessions to allow students to ask questions about homework and lectures. Held open review sessions before exams to help students prepare. \\
+\gray Awards & \textbf{AAPT Teaching Assistant Award} \hfill SFSU Physics, April 2015 \\
+& Nominated by the department to receive the Outstanding Physics Teaching Assistant award, awarded by the American Association of Physics Teachers. One of 2 winners out of over 15 teaching assistants in the department.\\ %\hline
+\end{tabularx}
+
+%\vspace{12pt} %Space between Work Experience entries
+
+%\begin{tabularx}{0.97\linewidth}{>{\raggedright\scshape}p{2cm}X}
+%\gray Period & \textbf{March 2009 --- August 2010 (Part Time)}\\
+%\gray Employer & \textbf{Buy More} \hfill New York, USA\\
+%\gray Job Title & \textbf{Supermarket Clerk}\\
+%& Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et auctor neque. Nullam ultricies sem sit amet magna tristique imperdiet.
+%\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Technical Skills}}
+
+\begin{tabular}{ @{} >{\bfseries}l@{\hspace{1ex}} l }
+Programming Languages & Python, Java, C, C++, Fortran \\[6pt]
+Software \& Tools & Windows, Mac OS, Ubuntu Linux, GNU \\
+& Proficient with Microsoft Office, iWork, Mathematica, MatLab, Data Visualization, Xcode, \LaTeX  \\
+& Basic skill with COMSOL Software, AutoCAD, MaxMSP, TouchOSC \\[6pt]
+Equipment & Proficient with Computer Hardware, Oscilloscope, Arduino Microcontroller, Multimeter \\
+& Basic skill with Soldering, Electronic Circuit Design and Analysis \\[6pt]
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
